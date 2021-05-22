@@ -1,0 +1,22 @@
+
+.header .menu-bar .nav-item {
+font-size: 1.2em;
+margin: 0.8em;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.header .menu-bar .navbar-toggler{
+  background-color: rgb(240, 235, 235);
+}
+
+.header .menu-bar .nav-item a:hover{
+  color: #669DB3FF;
+}
+
+.header .menu-bar .nav-item .active{
+  text-decoration: underline;
+  color: #A89C94FF;
+
+}
+
+
