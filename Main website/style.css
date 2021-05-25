@@ -1,10 +1,18 @@
 .navigation_bar{
-  background-color: #A8D5BAFF;
+  /* background-color: #A8D5BAFF; */
+  background-color: #1c1c25;
+}
+
+.BODY{
+  background-color: #ecf0f1;
 }
 .header .menu-bar .nav-item {
 font-size: 1.4em;
 margin: 1em;
 font-family: "Lucida Console", "Courier New", monospace;
+}
+.header .menu-bar .nav-item .nav-link{
+  color: white;
 }
 
 .header .menu-bar .navbar-toggler{
@@ -60,17 +68,16 @@ font-family: "Lucida Console", "Courier New", monospace;
 }
 .typing{
   text-transform: uppercase;
-  color: #0d3b4c;
+  color: #ecf0f1;
   font-family: Marker Felt, fantasy;
 }
 
 /* about me section style */
-
+/* for image */
 .my-image {
   position: relative;
-  margin-left: 30%;
-  width: 30%;
-  height: 10%;
+  /* margin-left: 5%; */
+  width: 80%;
   margin-bottom: 2%;
 }
 
@@ -81,7 +88,7 @@ font-family: "Lucida Console", "Courier New", monospace;
   backface-visibility: hidden;
   border-radius: 30%;
 }
-
+/* 
 .my-image .middle {
   transition: .5s ease;
   opacity: 0;
@@ -104,11 +111,11 @@ font-family: "Lucida Console", "Courier New", monospace;
   color: black;
   font-size: 16px;
   padding: 146px 25px;
-}
-
-/* #download-cv{
-  margin-left: 10%;
 } */
+
+#download-cv{
+  margin-left: 30%;
+}
 
 .about_me .container .about_title{
   text-align: center;
@@ -180,3 +187,305 @@ font-family: "Lucida Console", "Courier New", monospace;
 .skills .container .row .col-4 .progress #CPLUS{
   background-image: linear-gradient(#659EC7, #08457E );
 }
+
+
+/* EDUCATION */
+
+.education{
+  margin-top: 4%;
+}
+
+/* for image */
+.insitute_images {
+  margin-left: 10%;
+  position: relative;
+  width: 100%;
+}
+
+.insitute_images .image{
+  width: 100%;
+  height: auto;
+}
+
+
+.insitute_images .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ecf0f1;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+
+.insitute_images:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.insitute_images .text {
+  white-space: nowrap; 
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/* NIST */
+.nist_image {
+  margin-left: 40%;
+  position: relative;
+  width: 30%;
+}
+
+.nist_image .image{
+  width: 100%;
+  height: auto;
+}
+
+
+.nist_image .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ecf0f1;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+
+.nist_image:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.nist_image .text {
+  white-space: nowrap; 
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/* CARD */
+.education .container .row{
+  margin: 3%;
+}
+.education .container .row .col-4 .middle {
+  position: relative;
+}
+
+.education .container .row .col-4 .card {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+} 
+
+
+.education .container .row .col-4 .card .front{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(0deg);
+}
+.education .container .row .col-4 .card .back{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.education .container .row .col-4 .card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.education .container .row .col-4 .card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+
+/* <PROJECTS> */
+/* Card position */
+.projects .container .row .card{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin:20px 62px;
+  /* margin-left: 40px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #95a5a6;
+  box-shadow: 0 10px 25px rgb(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+}
+/* imgbox postion */
+.projects .container .row .card .imgBx{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+}
+/* image will come up from card div */
+.projects .container .row .card:hover .imgBx{
+  transform: translateY(-140px);
+}
+
+/* image  */
+.projects .container .row .card .imgBx img{
+  max-width: 100%;
+  margin:  0 0 20px;
+}
+/* image rotation */
+/* .projects .container .row .card:hover .imgBx{
+  transform: translate(-20px,-40px) rotate(-25deg) scale(1.4);
+} */
+.projects .container .row .card .content
+{
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  opacity: 0; /*to hide details and button*/
+  visibility: hidden;/*to hide details and button*/
+}
+
+/* after hover, it will show the content .card:hover*/
+.projects .container .row .card:hover .content{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50px)
+}
+.projects .container .row .card .content .descipition h6{
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* .projects .container .row .card .content .descipition h6:hover{
+  background: cornflowerblue;
+} */
+
+.projects .container .row .card .content a{
+  position: relative;
+  display: inline-block;
+  padding: 12px 30px;
+  background: rgb(61, 54, 54);
+  border-radius: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #cdcddd;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* -------------------SERVICES-------------------- */
+.services .container .row{
+  display: flex;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+}
+
+.services .container .row .col-6{
+  margin-top:2%;
+}
+.services .container .active_services{
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.box {
+  float: left;
+  width: 50%;
+  padding: 40px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.services .container .box img{
+  max-width: 45%;
+  margin-left: 20%;
+}
+
+.services .container .box p{
+  margin-top: 12%;
+  transition: .5s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 125%;
+}
+
+.services .container .row .col-6 .card:hover{
+  background: linear-gradient(#bdc3c7,#7f8c8d);
+  cursor: pointer;
+  color: #000;
+  box-shadow: -5px 5px 10px 0 rgb(0, 0, 0, 0.4);
+  transition: .5s;
+}
+
+.services .container .box img:hover{
+  max-width: 60%;
+  color: #fff;
+}
+.services .container .box p:hover{
+  color:rgb(240, 235, 235);
+  font-size: 100%;
+  font-weight: bolder;
+}
+
+
+/* <CONTACTS> */
+
+.contact .container .row .col-6 .clearfix .box img{
+  max-width: 30%;
+  margin-left: 60%;
+  transition: 0.5s ease-in-out;
+}
+
+.contact .container .row .col-6 .clearfix .box p{
+  margin-top: 6%;
+  transition: .5s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 125%;
+}
+
+.contact .container .row .col-6 .clearfix .box img:hover{
+  max-width: 32%;
+  transform: translateY(-80px);
+}
+.contact .container .row .col-6 .clearfix .box img:hover{
+  transform: translate(-20px,-40px) rotate(-25deg) scale(1.4);
+}
+

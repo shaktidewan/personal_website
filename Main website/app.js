@@ -49,3 +49,32 @@ window.addEventListener('load',()=>{
     progress.style.width = values[index];
   });
 })
+
+//for services
+window.addEventListener('scroll',()=>{
+  let content = document.querySelector('#services_id');
+  let contentPosition = content.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight;
+  if(contentPosition < screenPosition){
+  //   alert("hey");
+  // }
+    // adding class in content of services
+    content.classList.add('active_services');
+  }else{
+    content.classList.remove('active_services');
+  }
+})
+
+window.addEventListener('scroll',()=>{
+  let content = document.querySelector('#service_id');
+  let contentPosition = content.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight;
+  if(contentPosition < screenPosition){
+  //   alert("hey");
+  // }
+    // adding class in content of services
+    content.classList.add('active_services');
+  }else{
+    content.classList.remove('active_services');
+  }
+})
