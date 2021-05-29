@@ -1,0 +1,27 @@
+https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
+
+for javascript, css and html
+https://www.darkcode.info/2018/10/3d-flip-card-effect-on-hover-using-only.html
+
+for png images:
+https://www.hiclipart.com/free-transparent-background-png-clipart-iikiq
+
+for colors name:
+https://flatuicolors.com/palette/defo
+
+color click finder:
+https://colors.artyclick.com/color-name-finder/
+
+for 3d effects in css
+https://www.youtube.com/watch?v=W3pQXyjTKps
+Online Tutorials
+
+PURE JAVASCRIPT SCROLL ANIMATION:
+https://www.youtube.com/watch?v=7kOGCgUuCPY
+
+Trigger CSS Animations on Scroll
+Webucator
+https://www.youtube.com/watch?v=TfDK-KLq0Ks
+
+FOR PRELOADER
+https://codepen.io/r4ms3s/pen/XJqeKB
