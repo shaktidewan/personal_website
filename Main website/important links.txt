@@ -25,6 +25,3 @@ https://www.youtube.com/watch?v=TfDK-KLq0Ks
 
 FOR PRELOADER
 https://codepen.io/r4ms3s/pen/XJqeKB
-
-FOR SLIDER CARD :
-How to create product slider with bootstrap in youtube

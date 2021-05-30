@@ -94,6 +94,10 @@ font-family: "Lucida Console", "Courier New", monospace;
   border-radius: 30%;
 } */
 
+.about_me{
+  margin-top: 6rem;
+}
+
 #download-cv{
   margin-left: 30%;
 }
@@ -138,6 +142,10 @@ font-family: "Lucida Console", "Courier New", monospace;
 
 } */
 
+.skills{
+  margin-top: 10rem;
+}
+
 .skills .container .row .col-4 .progress .progress-bar{
   position: relative;
   border-radius: 2px;
@@ -178,7 +186,8 @@ font-family: "Lucida Console", "Courier New", monospace;
 /* EDUCATION */
 
 .education{
-  margin-top: 4%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 /* for image */
@@ -328,6 +337,10 @@ font-family: "Lucida Console", "Courier New", monospace;
 
 /* <PROJECTS> */
 /* Card position */
+
+.projects{
+  margin-top: 4rem;
+}
 .projects .container .row .card{
   position: relative;
   width: 300px;
@@ -406,6 +419,9 @@ font-family: "Lucida Console", "Courier New", monospace;
 }
 
 /* -------------------SERVICES-------------------- */
+.services{
+  margin-top: 10rem;
+}
 .services .container .row{
   display: flex;
   opacity: 0;
@@ -468,7 +484,9 @@ font-family: "Lucida Console", "Courier New", monospace;
 
 
 /* <CONTACTS> */
-
+.contact{
+  margin-top: 10rem;
+}
 .contact .container .row .col-6 .clearfix .box img{
   max-width: 30%;
   /* margin-left: 60%; */
